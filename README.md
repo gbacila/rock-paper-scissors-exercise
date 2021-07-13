@@ -1,1 +1,1 @@
-# This is my Rock Paper scissors program!
+# This is my Rock Paper Scissors program!
