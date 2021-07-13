@@ -1,10 +1,14 @@
 # game.py
 import random
+import os
 options = ["Rock","Paper","Scissors"]
+
+#Getting the user name. Found at https://www.nylas.com/blog/making-use-of-environment-variables-in-python/
+usname = os.environ.get('USER')
+
+print("Welcome to the game, ",usname,"!")
 print("Rock, Paper, Scissors, Shoot!")
-
 #Getting the user's inputs
-
 game = input("Please enter Rock, Paper or Scissors here: ")
 
 #Checing the inputs
@@ -40,3 +44,5 @@ if x == 0:
 elif x == -1:
     print("You lost, try again")
 else: print("You won! Congrats")
+
+print("It was a great game, ",usname,", Please play again!")
