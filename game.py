@@ -1,10 +1,15 @@
 # game.py
 import random
+from dotenv import load_dotenv
 import os
 options = ["Rock","Paper","Scissors"]
 
+load_dotenv()
+print(os.getenv("SECRET_MESSAGE"))
+
 #Getting the user name. Found at https://www.nylas.com/blog/making-use-of-environment-variables-in-python/
-usname = os.environ.get('USER')
+usname = os.getenv("USER_NAME")
+print(usname)
 
 print("Welcome to the game, ",usname,"!")
 print("Rock, Paper, Scissors, Shoot!")

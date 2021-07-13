@@ -1,0 +1,4 @@
+
+#list the package names to be installed
+python-dotenv
+pandas
