@@ -1,7 +1,5 @@
 # game.py
-#
-#
-print("Hello")
+
 import random
 from dotenv import load_dotenv
 import os
@@ -18,6 +16,8 @@ print("Rock, Paper, Scissors, Shoot!")
 #Getting the user's inputs
 game = input("Please enter Rock, Paper or Scissors here: ")
 
+game = game.title()
+
 #Checing the inputs
 if game == "Rock" or game == "Paper" or game == "Scissors":
     print("The player selected ",game)
@@ -27,7 +27,7 @@ else:
 
 comp = random.choice(options)
 print("Computer selected: ",comp)
-
+# -1
 if game == "Rock":
     if comp == "Rock":
         x = 0
@@ -53,3 +53,4 @@ elif x == -1:
 else: print("You won! Congrats")
 
 print("It was a great game, ",usname,", Please play again!")
+#new_message =f"Hello {var} World"
