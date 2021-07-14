@@ -29,6 +29,10 @@ pip install -r requirements.txt
 ```
 ## Usage
 
+Customize the game by updating the user name in .env file 
+
+Make sure to keep .gitignore file to secure personal data
+
 Play the game using the command line:
 ```
 python game.py
